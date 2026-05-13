@@ -1,0 +1,19 @@
+Пример запроса к магазину партнера:
+HTTPS
+GET /api/v1/store-info HTTP/1.1
+Host: metro.ru
+Authorization: Bearer 'наш токен авторизации'
+Accept: application/json
+
+Такие же запросы будут направляться к кажддому партнеру нашего магазина
+
+Пример ответа:
+HTTP
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "name": "Metro",
+  "delivery_hours": "21:00 - 23:00",
+  "store_link": "https://online.metro-cc.ru/"
+}
