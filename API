@@ -1,4 +1,32 @@
-Пример запроса к магазину партнера:
+Пример запроса при переходе на данный экран:
+HTTP
+GET /api/v1/partners
+Accept: application/json
+
+Пример ответа:
+[
+{
+  "name": "Metro",
+  "delivery_hours": "21:00 - 23:00",
+  "store_link": "https://online.metro-cc.ru/"
+},
+{
+"name": "Auchan",
+  "delivery_hours": "18:00 - 20:00",
+  "store_link": "https://www.auchan.ru/"
+}
+]
+В массиве будут перечислены все партнеры
+
+
+
+
+
+
+
+
+
+Пример запроса к магазину партнера на бэкенде:
 HTTPS
 GET /api/v1/store-info HTTP/1.1
 Host: metro.ru
