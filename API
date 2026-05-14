@@ -4,6 +4,10 @@ GET /api/v1/partners
 Accept: application/json
 
 Пример ответа:
+HTTP
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 [
 {
   "name": "Metro",
@@ -18,8 +22,15 @@ Accept: application/json
 ]
 В массиве будут перечислены все партнеры
 
+Пример обработки ошибок:
 
+HTTP
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json
 
+{
+"message": "Произошла непредвиденная ошибка на сервере."
+}
 
 
 
